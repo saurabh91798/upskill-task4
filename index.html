@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-slate-300">
+    <nav class="bg-white">
+      <div class="mx-auto container flex justify-between">
+        <p>LOGO</p>
+        <ul class="flex justify-between gap-10">
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+        <p>username</p>
+      </div>
+    </nav>
+    <section class="mx-auto mt-16 container">
+      <div class="flex">
+        <div class="left w-1/2">
+          <div class="bg-white flex flex-col justify-between h-1/2 rounded-md">
+            <div class="flex flex-col gap-5">
+              <h2 class="font-semibold pt-4 text-lg">Added Item</h2>
+              <div>
+                <!--<ul id="itemsList">
+                  Added items will be here
+                </ul> -->
+                <table id="itemsTable" class="tbody w-full">
+                  <thead>
+                    <tr>
+                      <th class="w-1/6">Sr. No.</th>
+                      <th class="w-4/6">Name</th>
+                      <th class="w-1/6">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody id="itemsTableBody"></tbody>
+                </table>
+                <table id="selectionTable" class="tbody w-full">
+                  <tbody id="selectionTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+            <div
+              id="totalAmount"
+              class="mt-5 w-full flex justify-between mb-2 px-10 font-semibold"
+            >
+              <h2>Total Amount</h2>
+              <p id="totalAmountValue">Rs 0</p>
+            </div>
+          </div>
+          <div
+            class="mt-4 bg-white flex flex-col justify-between px-5 h-1/2 rounded-md"
+          >
+            <h2 class="font-medium mt-2 text-lg">Book now</h2>
+            <div>
+              <label for="">Full Name</label>
+              <input
+                type="text"
+                placeholder="John Doe"
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              />
+            </div>
+            <div class="flex items-center gap-2">
+              <form>
+                <label>Email</label>
+                <input
+                  type="text"
+                  placeholder="mailid@some.com"
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                />
+              </form>
+              <form>
+                <label>Phone Number</label>
+                <input
+                  type="text"
+                  placeholder="0000000000"
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                />
+              </form>
+            </div>
+            <button
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+        <div class="right ml-4 w-1/2">
+          <div class="h-full bg-white py-4 rounded-md">
+            <h1 class="ml-5">Browse Services</h1>
+            <p>
+              Click on add to kart button to add services to your cart or press
+              skip
+            </p>
+            <hr />
+            <div
+              class="service-display flex justify-center"
+              id="serviceDisplay"
+            >
+              <!-- Services will be added here -->
+            </div>
+            <div class="btn flex">
+              <a href="/"
+                ><button class="skipbtn bn632-hover bn28">
+                  Skip Item -
+                </button></a
+              >
+              <a href="/"
+                ><button class="addbtn bn632-hover bn22">Add Item +</button></a
+              >
+            </div>
+            <hr />
+            <p>Add Item to the cart and book now</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
